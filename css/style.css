@@ -37,15 +37,52 @@ p {
 }
 
 header {
-  width: 50%;
+  width: 100%;
+  background-color: rgb(50, 52, 61);
   padding: .5rem 0 .5rem 0;
-  /* margin: 0 auto; */
-  /* margin-left: 0px; */
   text-align: left;
 }
 
-header h1.pageTitle {
-  padding: .3rem 1rem .3rem 5rem;
+.navBar {
+  display: flex;
+  /* flex-direction: row; */
+  margin-right: 5%;
+}
+
+.pageTitle {
+  width: 50%;
+  /* justify-content:left; */
+  /* width: auto; */
+}
+
+.pageTitle, .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.pageTitle h1 {
+  padding: .3rem .3rem .3rem 2rem;
   margin: 0px;
+  margin-right: auto;
   background-color: rgb(146, 204, 206);
 }
+
+.navigation {
+  /* display: flex; */
+  width: 50%;
+  justify-content: right;  
+}
+
+.navigation a { 
+  color: rgb(146, 204, 206);
+  padding: 10px;
+  font-size: 18px;
+  text-underline-offset: .3rem;  
+}
+
+.heroBanner{
+  display: flex;
+  background-image: url(../images/02-hero-bg.jpg);
+}
+
+
