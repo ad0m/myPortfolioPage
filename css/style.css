@@ -1,5 +1,10 @@
-* {
+/* * {
   box-sizing: border-box;
+} */
+
+:root {
+  --blue: ;
+  --grey: ;
 }
 
 body {
@@ -20,7 +25,7 @@ h3 {
 
 h1 {
   /* 4rem = 40px (4 * 10px) */
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 2.25rem;
 }
 
@@ -61,7 +66,7 @@ header {
 }
 
 .pageTitle h1 {
-  padding: .3rem .3rem .3rem 2rem;
+  padding: .3rem .3rem .3rem 3.5rem;
   margin: 0px;
   margin-right: auto;
   background-color: rgb(146, 204, 206);
@@ -70,7 +75,7 @@ header {
 .navigation {
   /* display: flex; */
   width: 50%;
-  justify-content: right;  
+  justify-content: flex-end;  
 }
 
 .navigation a { 
@@ -82,7 +87,30 @@ header {
 
 .heroBanner{
   display: flex;
-  background-image: url(../images/02-hero-bg.jpg);
+  /* flex-direction: row; */
+  padding: 5px;
+  background: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(3, 146, 255, 0.209);
 }
 
+.Profphoto {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.tagLine {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+  align-items: center;
+  /* //background-color: rgb(146, 204, 206); */
+}
+
+.tagLine h2 {
+  background-color: rgb(146, 204, 206);
+  padding: .3rem .3rem;
+  margin-bottom: 0px;
+}
 
