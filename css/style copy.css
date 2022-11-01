@@ -81,28 +81,10 @@ header {
 
 }
 
-@media screen and (max-width: 575px) {
 
-  .main-nav{
-    flex-direction: column;
-  }
-
-  .navigation {
-    flex-direction: row;
-    flex: 1;
-    justify-content:space-evenly
-  }
-
-  .pageTitle {
-    width: 100%;
-    margin-right: ;
-  }
-  
-}
 
 .heroBanner{
   display: flex;
-  /* flex-direction: row; */
   padding: 5px;
   background: url(../images/02-hero-bg.jpg);
   background-size: cover;
@@ -114,6 +96,7 @@ header {
   justify-content: flex-end;
   width: 75%;
 }
+
 
 .tagLine {
   display: flex;
@@ -136,19 +119,72 @@ header {
 
 .flexbox-item {
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   width: 96%;
-  height: 300px;
+  /* height: 300px; */
   margin: 10px;
 
 }
 
 .flexbox-item h2 {
   border-right: 3px solid #333;
-  width: 300px;
-  align-content: flex-end;
+  padding-right: 10px;
+  width: 20%;
+  text-align: right;
 }
 
 .flexbox-item p {
   width: 70%;
+}
+
+
+
+
+/* This is the screenshrink layout */
+
+@media screen and (max-width: 575px) {
+
+  .main-nav{
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-direction: row;
+    flex: 1;
+    justify-content:space-around;
+  }
+
+  .pageTitle {
+    width: 100%;
+    padding: 0px;
+    margin-right: 0;
+  }
+
+  .heroBanner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tagLine h2{
+    justify-content: center;
+    align-content: center;
+  }
+
+  .flexbox-item {
+    flex-flow: column wrap;
+  }
+
+  .flexbox-item h2 {
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 100%; 
+    text-align: Left;
+  }
+
+  .flexbox-item p {
+    width: 100%;
+    padding-left: 10px;
+  }
+
 }
