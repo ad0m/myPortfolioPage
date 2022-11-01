@@ -161,7 +161,7 @@ header {
   }
 
   .heroBanner {
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
   }
   
